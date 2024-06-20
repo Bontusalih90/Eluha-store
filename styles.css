@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    
+}
+body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color:#e8927c;
+    box-shadow: 0 5px 15px #5c352c;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.logo{
+    width: 70px;
+    border-radius: 35px;
+}
+ul li a{
+    color:rgb(247, 249, 252);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 2s ease;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+    letter-spacing: 1px;
+}
+#side-bar, #closebtn {
+    display: none;
+    align-items: center;
+}
+
+.hero{
+    height:90vh;
+    width: 100%;
+}
+.hero-section{
+    background-color: #f9ebc783;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80vh;
+    margin: 10px auto;
+    border: solid rgb(184, 181, 181) 2px;
+    border-radius: 30px;
+}
+.hero-section-h4,  .hero-section-p {
+    color:rgb(247, 249, 252);
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    
+}
+ h1 {
+    color:#884331;
+    padding-top: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+h2{
+    color: #832f1a;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+}
+#hero button{
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-top: 15px;
+    background-color: #b94e34;
+    color: #FDFFF8;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #5c352c;
+}
+#hero button:hover{
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#products{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #FDFFF8;
+}
+#products img{
+    
+    height: 350px;
+}
+
+.product-list{
+    border: #e8927c solid 2px;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #5c352c;
+    max-width: 305px;
+}
+.shopping-items img{
+     width: 200px;
+     height: 230px;
+}
+.product-list a{
+    color:#884331;
+    padding: 5px ;
+}
+.product-list a:hover{
+     font-weight: 500;
+     color: #5c352c;
+}
+.shopping-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.shopping-items{
+    border: #e6aea0 solid 1px;
+    margin: 5px;
+}
+.shopping-items span{
+    font-size: 12px;
+    margin-left: 10px;
+    text-decoration: underline;
+    color: grey;
+}
+.shopping-items h5{
+      margin-left: 5px;
+}
+.star i{
+    color: rgb(235, 135, 5);
+    font-size: 10px;
+    
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.cart a{
+    color: black;
+    
+}
+.cart a:hover{
+    background-color: #e8927c;
+    padding: 4px;
+    border-radius: 5px;
+}
+.new-arrival{
+    
+    width: 90%;
+    background-color:#f8eeec;
+    margin: 20px auto;
+    
+}
+#new-arrival{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#new-arrival img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+      width: 170px;
+      border:rgb(233, 232, 232) solid 1px;
+      height: 270px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+}
+#newsletters{
+    width: 100%;
+    background-color: #b94e34;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.newsletters h2{
+    margin-top: 10px;
+    font-size: 24px;
+}
+.newsletters p{
+    font-size: 16px;
+    color: rgb(216, 214, 214);
+    margin: 15px;
+}
+.newsletters span{
+    color: #fcbcac;
+}
+
+#newsletters form{
+    margin: 20px;
+    display: flex;
+}
+#newsletters .form input{
+     padding: 10px;
+     color: rgb(189, 185, 185);
+     border: 1px solid transparent;
+     outline: none;
+     border-radius: 5px;
+     width: 400px;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+     
+}
+#newsletters .form button{
+    padding: 10px 15px;
+    background-color: #ee9f8b;
+    outline: none;
+    color: #832f1a;
+    font-weight: 500;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.install .app{
+   margin: 10px;
+}
+.install p{
+    font-size: 14px;
+    margin: 5px;
+}
+.account a, .about a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    margin: 3px;
+}
+.contact a{
+    color: black;
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.contact *{
+    margin: 5px;
+}
+#footer{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+@media(max-width:799px){
+    #navbar{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 70vh;
+        width: 150px;
+        background-color: #e8927c;
+        padding: 80px 0 0 20px;
+        
+    }
+    #navbar.active{
+          right: 0px;
+    }
+
+    #side-bar{
+        display: flex;
+        align-items: center;
+    }
+    #side-bar i{
+        color: whitesmoke;
+        font-size: 24px;
+        margin: 15px;
+    }
+    #closebtn{
+        position: absolute;
+        font-size: 28px;
+        color: whitesmoke;
+        left: 40px;
+        top: 40px;
+        display: block;
+    }
+    .lg-bag{
+        display: none;
+    }
+    #newsletters .form input{
+        width: 300px;
+    }
+}
+@media(max-width:477px){
+    .shopping-items{
+        width: 300px;
+    }
+    .shopping-items img{
+        width: 300px;
+        height: 300px;
+   }
+   #newsletters .form input{
+    width: 220px;
+   }
+    footer, footer *, .contact a,
+     .about a, .account a, .install p{
+    font-size: 12px;
+    margin: 2px;
+   }
+
+}
