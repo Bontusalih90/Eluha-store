@@ -328,7 +328,7 @@ h2{
         width: 300px;
     }
     .shopping-items img{
-        width: 300px;
+        width: 299px;
         height: 300px;
    }
    #newsletters .form input{
@@ -336,7 +336,7 @@ h2{
    }
     footer, footer *, .contact a,
      .about a, .account a, .install p{
-    font-size: 12px;
+    font-size: 10px;
     margin: 2px;
    }
 
