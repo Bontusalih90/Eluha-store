@@ -105,11 +105,12 @@ h2{
 
 #products{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #FDFFF8;
+    margin-top: 20px;
 }
 #products img{
     
@@ -140,10 +141,12 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    
 }
 .shopping-items{
-    border: #e6aea0 solid 1px;
+    border: #e6aea0 solid 2px;
     margin: 5px;
+    box-shadow: 0 5px 10px #5c352c;
 }
 .shopping-items span{
     font-size: 12px;
