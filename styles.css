@@ -719,6 +719,8 @@ input:focus~label, input:not(:placeholder-shown)~label{
    .links{
     padding: 0 1rem;
    }
-  
+  .blog-content video{
+    width: 350px;
+  }
  
 }
