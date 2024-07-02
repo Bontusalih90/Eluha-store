@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elu Store</title>
+    <script src="https://kit.fontawesome.com/dcaf597049.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.jpg" alt="logo"  class="logo"></a>
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html" class="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="closebtn"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </nav>
+        <div id="side-bar">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></i></a>
+            <i id="menu-bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+   <section class="prodetails">
+    <div class="single-pro-img">
+      <img src="img/skirt5.jpg" width="100%" id="MainImg">
+
+     <div class="small-img-group">
+        <div class="small-img-col">
+          <img src="img/skirt5.jpg" alt="" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img src="img/skirt2.jpg" alt="" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img src="img/skirt11.jpg" alt="" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+          <img src="img/skirt12.jpg" alt="" width="100%" class="small-img">
+        </div>
+     </div>
+    </div>
+    <div class="single-pro-details">
+      <h6>Home / Skirt</h6>
+      <h4>Women Fashion Skirt</h4>
+      <h3>$45.99</h3>
+      <select>
+        <option value="">Select Size</option>
+        <option value="">XL</option>
+        <option value="">Large</option>
+        <option value="">Medium</option>
+        <option value="">Small</option>
+      </select>
+      <input type="number" value="1">
+      <button>Add To Cart</button>
+      <h4>Product Detail</h4>
+      <span>Premium Quality Silk Made from high-quality silk, our skirts provide a luxurious feel and a beautiful drape that flatters all body types. 
+      </span>
+    </div>
+
+    </div>
+   </section>
+ 
+
+
+   <section class="new-arrival">
+        <div><h1 style="font-style: italic; font-weight: 300;">New Collections!!</h1></div>
+        <div id="new-arrival">
+          <img src="img/hijab7.jpg" alt="">
+          <img src="img/abaya5.jpg" alt="">
+          <img src="img/skirt4.jpg" alt="">
+          <img src="img/top6.jpg" alt="">
+          <img src="img/hijab8.jpg" alt="">
+          <img src="img/skirt8.jpg" alt="">
+        </div>
+   </section>
+   <section id="newsletters">
+    <div class="newsletters">
+      <h2>Sign Up For Newsletters</h2>
+      <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+      <form action="">
+        <input type="text" value="Your email adress">
+        <button>Sign Up</button>
+      </form>
+    </div>
+   </section>
+   <footer>
+      <div class="footer" id="contact">
+        <div class="contact">
+          <h3>Contact us</h3>
+           <i class="fa-solid fa-phone"><a href="#">+201012345678</a></i><br>
+          <i class="fa-solid fa-envelope"><a href="#">eluhastore@gmail.com</a></i><br>
+          <i class="fa-solid fa-globe"><a href="#">www.eluonlineshop.com</a></i>
+          <h3>Follow Us</h3>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="about">
+          <h3>About</h3>
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="account">
+          <h3>My Account</h3>
+          <a href="sign-up.html">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="install">
+          <h3>Install App</h3>
+          <p>From App Store or Google Play</p>
+          <a href="#" class="app"><img src="img/appstore.jpg"  style="width: 50px;"></a>
+          <a href="#" class="app"><img src="img/gooleplay.jpg" style="width: 50px;" alt="" ></a>
+          <p>Secure Paymant Gateways</p>
+          <img src="img/icons8-visa-48.png" alt="" style="width: 24px; margin-left: 10px;">
+          <img src="img/icons8-mastercard-48.png" alt="" style="width: 24px;">
+          <img src="img/icons8-paypal-48.png" alt="" style="width: 24px;">
+          <img src="img/icons8-credit-card-48.png" alt="" style="width: 24px;">
+        </div>
+      </div>
+      <p id="footer">&copy; 2024  Eluha online shopping srore. All rights reserved.</p>
+    </footer>
+    <script>
+      const MainImg = document.getElementById("MainImg");
+      const smallimg = document.getElementsByClassName("small-img");
+
+      smallimg[0].onclick = function(){
+        MainImg.src = smallimg[0].src;
+      }
+      smallimg[1].onclick = function(){
+        MainImg.src = smallimg[1].src;
+      }
+      smallimg[2].onclick = function(){
+        MainImg.src = smallimg[2].src;
+      }
+      smallimg[3].onclick = function(){
+        MainImg.src = smallimg[3].src;
+      }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
